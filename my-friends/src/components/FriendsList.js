@@ -3,6 +3,7 @@ import { axiosWithAuth } from "../utils/axiosWithAuth";
 import FriendsCard from "../components/FriendsCard"
 import { Container, Row } from "reactstrap";
 import AddFriend from "./AddFriend";
+import LogOut from "./LogOut";
 
 
 
@@ -38,9 +39,10 @@ const FriendsList = () => {
                         )
                     })}
                     <AddFriend />
+                    
                 </Row>
             </Container>
-            
+            <LogOut />
             </div>
         )
 } 

@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from "axios";
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Container, Col, Row } from 'reactstrap';
 
 
 class Login extends React.Component {
@@ -37,6 +37,10 @@ class Login extends React.Component {
 
     render(){
         return(
+            <Container>
+            
+                <Row>
+                    <Col xs="12" s="6" md="4">
             <Form onSubmit={this.login}>
             <FormGroup>
                 <Label for="exampleEmail">User Name</Label>
@@ -58,6 +62,10 @@ class Login extends React.Component {
                 </FormGroup>
                 <Button>Log In</Button>
             </Form>
+            </Col>
+            </Row>
+            
+            </Container>
         );
     }    
 }
